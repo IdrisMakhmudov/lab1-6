@@ -8,6 +8,8 @@ int main() {
     cout << "Enter coordinates of second point (x2, y2): "; cin >> x2 >> y2;
     length = x1-x2; if (length<0) length = -length;
     width = y1-y2; if (width<0) width = -width;
+    if (length!=0 && width!=0) 
     cout << "Rectangle area: " << length*width << ", its perimetr: " << 2*(length+width);
+    else cout << "This is not a rectangle";
     return 0;
     }
