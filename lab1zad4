@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+float a, b, sum, dif, prod, quot;
+cout << "Enter a and b, not equal to zero: " << endl;
+cin >> a >> b;
+if (a != 0 && b != 0) {
+    sum = a + b;
+    dif = a - b;
+    prod = a*b;
+    quot = (a*a)/(b*b);
+    cout << "Sum is: " << sum << ", difference: " << dif << ", product: " << prod << ", quotient: " << quot;
+    }
+    else {
+        cout << "a and b cannot be zero";
+        }
+    return 0;
+}
