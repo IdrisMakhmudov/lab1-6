@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float a, b, c;
+cout << "Enter a and b: " << endl;
+cin >> a >> b ;
+if ((a <= 0 || a>0) && (b <= 0 || b > 0)) {
+    c = (a+b)/2;
+cout << "Arithmetical mean is: " << c;
+}
+else {
+   cout << "a and b must be numbers";
+    }
+return 0;
+    }
