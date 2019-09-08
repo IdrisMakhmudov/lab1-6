@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a, b, S, P;
+    cout << "Enter a and b: " << endl;
+    cin >> a >> b ;
+    if (a > 0 && b > 0) {
+    S = a*b;
+    P = 2*(a+b);
+    cout << "S = " << S << endl;
+    cout << "P = " << P ;
+    }
+    else { 
+        cout << "a and b should be bigger than 0"; 
+        }
+    system("pause");
+    return 0;
+    }
