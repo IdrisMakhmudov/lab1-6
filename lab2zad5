@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float x1, x2, y1, y2, x3, y3, S, p, AC, BC, AB;
+    int b=2;
+    cout << "Enter coordinates of first point (x1, y1): "; cin >> x1 >> y1;
+    cout << "Enter coordinates of second point (x2, y2): "; cin >> x2 >> y2;
+    cout << "Enter coordinates of third point (x3, y3): "; cin >> x3 >> y3;
+    AC = sqrt(pow(x1-x3,b)+pow(y1-y3,b));
+    BC = sqrt(pow(x2-x3,b)+pow(y2-y3,b));
+    AB = sqrt(pow(x1-x2,b)+pow(y1-y2,b));
+    p = (AC+BC+AB)/2;
+    S = sqrt(p*(p-AC)*(p-BC)*(p-AB));
+    cout << "Rectangle area: " << S << ", its perimetr: " << AC+BC+AB;
+    return 0;
+    }
