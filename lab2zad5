@@ -10,9 +10,13 @@ int main() {
     cout << "Enter coordinates of third point (x3, y3): "; cin >> x3 >> y3;
     AC = sqrt(pow(x1-x3,b)+pow(y1-y3,b));
     BC = sqrt(pow(x2-x3,b)+pow(y2-y3,b));
-    AB = sqrt(pow(x1-x2,b)+pow(y1-y2,b));
-    p = (AC+BC+AB)/2;
+    AB = sqrt(pow(x1-x2,b)+pow(y1-y2,b)); 
+    if (AB+AC<=BC || BC+AC<=AB || BC+AB<=AC) cout << "This is not a triangle";
+    else {
+    p = (AC+BC+AB)/2; 
     S = sqrt(p*(p-AC)*(p-BC)*(p-AB));
-    cout << "Rectangle area: " << S << ", its perimetr: " << AC+BC+AB;
+    cout << "Rectangle area: " << S << "; its perimetr: " << AC+BC+AB;
+    }
     return 0;
     }
+    
