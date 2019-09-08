@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float A, B, C;
+    cout << "Enter A and B: ";
+    cin >> A >> B;
+    C=B; B=A; A=C;
+    cout << "A: " << A << "; B: " << B;
+    return 0;
+    }
