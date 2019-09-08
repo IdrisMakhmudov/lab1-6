@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float d, L, pi;
+    cout << "Enter diameter: ";
+    cin >> d;
+    pi = 3.14;
+    if (d > 0) { 
+    L = d*pi;
+    cout << endl << "Circumference is: " << L;
+}
+else {
+cout << "Diameter should be bigger than 0" << endl;
+}
+    return 0;
+    }
