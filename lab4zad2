@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    float a;
+ cout << "Enter a in pi*radians: ";
+ cin >> a;
+ a=a*180;
+ cout << "Angle a in degrees: " << a;
+ return 0;
+}
