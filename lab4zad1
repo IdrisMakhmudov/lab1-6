@@ -8,6 +8,6 @@ int main()
  cout << "Enter a: ";
  cin >> a;
  a=a/180;
- cout << "Angle a in radians: " << a;
+ cout << "Angle a in pi*radians: " << a;
  return 0;
 }
