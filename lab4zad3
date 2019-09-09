@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    float A, X, Y, kotenok, petushok;
+ cout << "Enter X, A and Y: ";
+ cin >> X >> A >> Y;
+ petushok=A/X;
+ kotenok=petushok*Y;
+ cout << "price per kg and " << Y << " kg of sweets: " << petushok << " and " << kotenok;
+ return 0;
+}
