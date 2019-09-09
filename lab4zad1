@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     float a;
- cout << "Enter a: ";
+ cout << "Enter a in degrees: ";
  cin >> a;
  a=a/180;
  cout << "Angle a in pi*radians: " << a;
