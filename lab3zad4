@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main(){
+float A, sobaka;
+cout«"Enter A: ";
+cin»A;
+A=A*A;
+sobaka=A*A;
+A=sobaka*sobaka;
+cout«"A in 8 degree: "«A;
+return 0;
+}
