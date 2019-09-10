@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    float x1, x2, x3, y1, y2, y3, AC, BC;
+    double x1, x2, x3, y1, y2, y3, AC, BC;
     cout << "Enter coordinates of point A: "; cin >> x1 >> y1;
     cout << "Enter coordinates of point B: "; cin >> x2 >> y2;
     cout << "Enter coordinates of point C: "; cin >> x3 >> y3;
@@ -12,3 +12,5 @@ int main() {
     cout << "Length of AC: " << AC << ", BC: " << BC << ", they sum is: " << AC + BC;
     return 0;
     }
+//2. Даны три точки A, B, C на числовой оси. Найти длины отрезков AC
+//и BC и их сумму.
