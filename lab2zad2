@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-    double x1, x2, x3, y1, y2, y3, AC, BC;
-    cout << "Enter coordinates of point A: "; cin >> x1 >> y1;
-    cout << "Enter coordinates of point B: "; cin >> x2 >> y2;
-    cout << "Enter coordinates of point C: "; cin >> x3 >> y3;
-    AC = sqrt((x1-x3)*(x1-x3) + (y1-y3)*(y1-y3));
-    BC = sqrt((x2-x3)*(x2-x3) + (y2-y3)*(y2-y3));
+    double x1, x2, x3, AC, BC;
+    cout << "Enter coordinates of point A: "; cin >> x1;
+    cout << "Enter coordinates of point B: "; cin >> x2;
+    cout << "Enter coordinates of point C: "; cin >> x3;
+    AC = abs(x3-x1);
+    BC = abs(x3-x2);
     cout << "Length of AC: " << AC << ", BC: " << BC << ", they sum is: " << AC + BC;
     return 0;
     }
