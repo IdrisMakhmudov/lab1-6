@@ -1,0 +1,14 @@
+// 1. Дан размер файла в байтах. Найти количество полных килобайтов,
+//которые занимает данный файл
+#include <iostream>
+using namespace std;
+
+int main()
+{
+double x;
+cout << "Enter x: "; cin >> x;
+if (x<0) cout << "Error 404"; 
+else
+cout << x/1024;
+return 0;
+}
