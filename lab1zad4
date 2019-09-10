@@ -6,11 +6,12 @@ int main() {
 float a, b, sum, dif, prod, quot;
 cout << "Enter a and b, not equal to zero: " << endl;
 cin >> a >> b;
+a=a*a; b=b*b;
 if (a != 0 && b != 0) {
-    sum = a*a + b*b;
-    dif = a*a - b*b;
-    prod = a*a*b*b;
-    quot = (a*a)/(b*b);
+    sum = a + b;
+    dif = a - b;
+    prod = a*b;
+    quot = a/b;
     cout << "Sum is: " << sum << ", difference: " << dif << ", product: " << prod << ", quotient: " << quot;
     }
     else {
