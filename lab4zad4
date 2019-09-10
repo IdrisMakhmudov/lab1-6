@@ -1,1 +1,16 @@
+//4. Скорость первого автомобиля V1 км/ч, второго — V2 км/ч,
+//расстояние между ними S км. Определить расстояние между ними через T
+//часов, если автомобили удаляются друг от друга.
+#include <iostream>
+using namespace std;
 
+int main(){
+    float yagodica, lyashka, golova, palec;
+    cout << "First car speed: "; cin >> yagodica;
+    cout << "Second car speed: "; cin >> lyashka;
+    cout << "Distance between them: "; cin >> golova;
+    cout << "Time: "; cin >> palec;
+    if (palec<0 || yagodica<0 || lyashka<0 || golova<0) cout << "Error 404";
+    else cout << "Distance between cars in " << palec << " hours: " << golova+yagodica*palec+lyashka*palec;
+    return 0;
+    }
