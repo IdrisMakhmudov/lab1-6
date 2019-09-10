@@ -1,13 +1,9 @@
 #include <iostream>
 using namespace std;
 int main(){
-float A, sobaka, koshka;
-cout«"Enter A: ";
-cin»A;
-A=A*A*A;
-sobaka=A*A;
-koshka=sobaka*sobaka;
-A=koshka*A;
-cout«"A in 15 degree: "«A;
+float x;
+cout«"Enter x: ";
+cin»x;
+cout«"y = "«4*pow(x-3,6)-7*pow(x-3,3)+2;
 return 0;
 }
