@@ -1,0 +1,15 @@
+//6. Найти решение системы линейных уравнений вида
+//A1·x + B1·y = C1,  y=(C1-A1*x)/B1
+//A2·x + B2·y = C2,  y=(C2-A2*x)/B2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+double x, y, A1, B1, C1, A2, B2, C2;
+cout << "Enter A1, B1, C1, A2, B2, C2: "; cin >> A1 >> B1 >> C1 >> A2 >> B2 >> C2;
+x=((B2-B1)*C1)/(B2*A1-A2*B1);
+y=(C1-A1*x)/B1;
+cout << "x: " << x << "; y: " << y;
+return 0;
+}
