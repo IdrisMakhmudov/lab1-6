@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   int A,B,c;
+   cout<<"Enter A and B: \n";
+   cin>>A>>B;
+   if (A<0||B<0||A<=B) cout<<"error404";
+   else 
+   {
+       c=A/B;
+       cout<<c;
+       }
+    return 0;
+}
