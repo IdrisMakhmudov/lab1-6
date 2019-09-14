@@ -1,0 +1,19 @@
+/*5. Дано трехзначное число. В нем зачеркнули первую слева цифру и
+приписали ее справа. Вывести полученное число.*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A,x,c;
+    cin>>A;
+    if(A>999||A<100) cout<<"Error 404";
+    else
+    {
+    c=A/100;
+    x=A%100;
+    cout<<x*10+c;
+    }
+  return 0;
+}
+
