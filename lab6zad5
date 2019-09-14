@@ -1,0 +1,20 @@
+/*5. Дан номер некоторого года (целое положительное число).
+Определить соответствующий ему номер столетия, учитывая, что, к примеру,
+началом 20 столетия был 1901 год*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A,M;
+    cout<<"Enter the year number: \n";
+    cin>>A;
+    if (A>=1)
+    {
+        M=A/100;
+        if(A%100==0) --M;
+        cout<<M+1<<" century";
+    }
+        else cout<<"Error 404";
+  return 0;
+}
