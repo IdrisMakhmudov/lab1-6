@@ -1,0 +1,20 @@
+/*3. Даны целые положительные числа A и B (A &gt; B). На отрезке длины
+A размещено максимально возможное количество отрезков длины B (без
+наложений). Найти длину незанятой части отрезка A.*/
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   int A,B,c;
+   cout<<"Enter A and B: \n";
+   cin>>A>>B;
+   if (A<0||B<0||A<=B) cout<<"error404";
+   else 
+   {
+       c=A%B;
+       cout<<c;
+       }
+    return 0;
+}
