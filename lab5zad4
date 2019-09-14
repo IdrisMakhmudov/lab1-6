@@ -1,0 +1,19 @@
+/*4. Дано двузначное число. Вывести число, полученное при
+перестановке цифр исходного числа.*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A,x,c;
+    cin>>A;
+    if(A>99||A<10) cout<<"Error 404";
+    else
+    {
+    x=A%10;
+    c=A/10;
+    cout<<x*10+c;
+    }
+  return 0;
+}
+
