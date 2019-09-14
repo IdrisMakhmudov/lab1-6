@@ -8,18 +8,14 @@ using namespace std;
 
 int main()
 {
-    int A,N;
+    int A,N,M;
     string day[7]={"voskresen'e","ponedelnik","vtornik","sreda","chetverg","pyatnica","subbota"};
     cout<<"Enter K and N: \n";
     cin>>A>>N;
     if (A>=1&&A<=365&&N>=1&&N<=7)
     {
-        if(A<=7)
-        {
-         A=A-1;   
-        }
-        A=(A+N)%7;
-        cout<<day[A];
+        M=(A+N-1)%7;
+        cout<<day[M];
     }
         else cout<<"Error 404";
   return 0;
