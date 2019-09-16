@@ -2,12 +2,14 @@
 using namespace std;
 int main(){
 float A, sobaka, koshka;
-cout«"Enter A: ";
-cin»A;
+cout<<"Enter A: ";
+cin>>A;
 A=A*A*A;
 sobaka=A*A;
 koshka=sobaka*sobaka;
 A=koshka*A;
-cout«"A in 15 degree: "«A;
+cout<<"A in 15 degree: "<<A;
 return 0;
 }
+//7. Дано число A. Вычислить A 15 , используя две вспомогательные
+//переменные и пять операций умножения.
