@@ -2,11 +2,13 @@
 using namespace std;
 int main(){
 float A, sobaka;
-cout«"Enter A: ";
-cin»A;
+cout<<"Enter A: ";
+cin>>A;
 A=A*A;
 sobaka=A*A;
 A=sobaka*sobaka;
-cout«"A in 8 degree: "«A;
+cout<<"In 8 degree: "<<A;
 return 0;
 }
+//6. Дано число A. Вычислить A 8 , используя вспомогательную
+//переменную и три операции умножения.
